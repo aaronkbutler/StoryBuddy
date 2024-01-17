@@ -11,7 +11,8 @@ import SwiftUI
 struct StoryBuddyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ChatListView()
+            ChatView(viewModel: .init(index: 0, chatHistory: []))
         }
     }
 }

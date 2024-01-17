@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		8D82E8892B51D328005C88D9 /* StoryBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82E8882B51D328005C88D9 /* StoryBuddyApp.swift */; };
-		8D82E88B2B51D328005C88D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82E88A2B51D328005C88D9 /* ContentView.swift */; };
 		8D82E88D2B51D32A005C88D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D82E88C2B51D32A005C88D9 /* Assets.xcassets */; };
 		8D82E8912B51D32A005C88D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D82E8902B51D32A005C88D9 /* Preview Assets.xcassets */; };
 		8D82E89B2B51D32A005C88D9 /* StoryBuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82E89A2B51D32A005C88D9 /* StoryBuddyTests.swift */; };
 		8D82E8A52B51D32A005C88D9 /* StoryBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82E8A42B51D32A005C88D9 /* StoryBuddyUITests.swift */; };
 		8D82E8A72B51D32A005C88D9 /* StoryBuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82E8A62B51D32A005C88D9 /* StoryBuddyUITestsLaunchTests.swift */; };
+		8D82E8B52B51D3B2005C88D9 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 8D82E8B42B51D3B2005C88D9 /* OpenAI */; };
+		8D82E8BD2B54FC32005C88D9 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82E8BC2B54FC32005C88D9 /* ChatView.swift */; };
+		8D82E8BF2B56F4D9005C88D9 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82E8BE2B56F4D9005C88D9 /* ChatListView.swift */; };
+		8D82E8C12B56F4FB005C88D9 /* ChatListView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82E8C02B56F4FB005C88D9 /* ChatListView+ViewModel.swift */; };
+		8D82E8C32B56F50C005C88D9 /* ChatView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82E8C22B56F50C005C88D9 /* ChatView+ViewModel.swift */; };
+		8D82E8C52B56F5C6005C88D9 /* OpenAIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82E8C42B56F5C6005C88D9 /* OpenAIManager.swift */; };
+		8D82E8C72B56FBED005C88D9 /* ArrayUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82E8C62B56FBED005C88D9 /* ArrayUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +42,6 @@
 /* Begin PBXFileReference section */
 		8D82E8852B51D328005C88D9 /* StoryBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D82E8882B51D328005C88D9 /* StoryBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBuddyApp.swift; sourceTree = "<group>"; };
-		8D82E88A2B51D328005C88D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8D82E88C2B51D32A005C88D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D82E88E2B51D32A005C88D9 /* StoryBuddy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StoryBuddy.entitlements; sourceTree = "<group>"; };
 		8D82E8902B51D32A005C88D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +50,12 @@
 		8D82E8A02B51D32A005C88D9 /* StoryBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D82E8A42B51D32A005C88D9 /* StoryBuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBuddyUITests.swift; sourceTree = "<group>"; };
 		8D82E8A62B51D32A005C88D9 /* StoryBuddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBuddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8D82E8BC2B54FC32005C88D9 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		8D82E8BE2B56F4D9005C88D9 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		8D82E8C02B56F4FB005C88D9 /* ChatListView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatListView+ViewModel.swift"; sourceTree = "<group>"; };
+		8D82E8C22B56F50C005C88D9 /* ChatView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatView+ViewModel.swift"; sourceTree = "<group>"; };
+		8D82E8C42B56F5C6005C88D9 /* OpenAIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIManager.swift; sourceTree = "<group>"; };
+		8D82E8C62B56FBED005C88D9 /* ArrayUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D82E8B52B51D3B2005C88D9 /* OpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +108,12 @@
 			isa = PBXGroup;
 			children = (
 				8D82E8882B51D328005C88D9 /* StoryBuddyApp.swift */,
-				8D82E88A2B51D328005C88D9 /* ContentView.swift */,
+				8D82E8BE2B56F4D9005C88D9 /* ChatListView.swift */,
+				8D82E8C02B56F4FB005C88D9 /* ChatListView+ViewModel.swift */,
+				8D82E8BC2B54FC32005C88D9 /* ChatView.swift */,
+				8D82E8C22B56F50C005C88D9 /* ChatView+ViewModel.swift */,
+				8D82E8C42B56F5C6005C88D9 /* OpenAIManager.swift */,
+				8D82E8C62B56FBED005C88D9 /* ArrayUtils.swift */,
 				8D82E88C2B51D32A005C88D9 /* Assets.xcassets */,
 				8D82E88E2B51D32A005C88D9 /* StoryBuddy.entitlements */,
 				8D82E88F2B51D32A005C88D9 /* Preview Content */,
@@ -145,6 +162,9 @@
 			dependencies = (
 			);
 			name = StoryBuddy;
+			packageProductDependencies = (
+				8D82E8B42B51D3B2005C88D9 /* OpenAI */,
+			);
 			productName = StoryBuddy;
 			productReference = 8D82E8852B51D328005C88D9 /* StoryBuddy.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 8D82E87C2B51D328005C88D9;
+			packageReferences = (
+				8D82E8B32B51D3B2005C88D9 /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
 			productRefGroup = 8D82E8862B51D328005C88D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D82E88B2B51D328005C88D9 /* ContentView.swift in Sources */,
+				8D82E8C72B56FBED005C88D9 /* ArrayUtils.swift in Sources */,
+				8D82E8BF2B56F4D9005C88D9 /* ChatListView.swift in Sources */,
+				8D82E8BD2B54FC32005C88D9 /* ChatView.swift in Sources */,
+				8D82E8C12B56F4FB005C88D9 /* ChatListView+ViewModel.swift in Sources */,
 				8D82E8892B51D328005C88D9 /* StoryBuddyApp.swift in Sources */,
+				8D82E8C52B56F5C6005C88D9 /* OpenAIManager.swift in Sources */,
+				8D82E8C32B56F50C005C88D9 /* ChatView+ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +645,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8D82E8B32B51D3B2005C88D9 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8D82E8B42B51D3B2005C88D9 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D82E8B32B51D3B2005C88D9 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8D82E87D2B51D328005C88D9 /* Project object */;
 }
