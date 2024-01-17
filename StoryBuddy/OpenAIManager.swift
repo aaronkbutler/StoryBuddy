@@ -11,6 +11,7 @@ import OpenAI
 final class OpenAIManager {
     static let shared = OpenAIManager()
     
+    // TODO: Add your API token
     let openAI = OpenAI(apiToken: "YOUR TOKEN HERE")
     
     static func systemPrompt() -> String {
